@@ -232,7 +232,10 @@ body {
   z-index: 3;
   cursor: pointer;
 }
-
+img {
+  max-width: 5 25%; /* Adjust the percentage to reduce the size */
+  height: auto;   /* Maintain the aspect ratio */
+}
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
