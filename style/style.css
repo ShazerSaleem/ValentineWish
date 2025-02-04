@@ -224,7 +224,7 @@ body {
 }
 
 .nine p {
-  font-size: 1rem;
+  font-size: 2vw; /* Adjusts font size based on the viewport width */
   font-weight: lighter;
 }
 
