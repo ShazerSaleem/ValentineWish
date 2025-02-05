@@ -9,142 +9,186 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet" />
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
+     <style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
 
-      body,
-      html {
-        width: 100%;
-        height: 100%;
-        font-family: 'Poor Story', system-ui;
-        font-weight: 700;
-        color: #ff6;
-        background-color: #000;
-        overflow: hidden;
-      }
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poor Story', system-ui;
+    font-weight: 700;
+    color: #ff6;
+    background-color: #000;
+    overflow: hidden;
+  }
 
-      p#start {
-        position: relative;
-        width: 16em;
-        font-size: 100%;
-        font-weight: 400;
-        margin: 20% auto;
-        color: #4ee;
-        opacity: 0;
-        z-index: 1;
-        animation: intro 2s ease-out;
-      }
+  p#start {
+    position: relative;
+    width: 16em;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 20% auto;
+    color: #4ee;
+    opacity: 0;
+    z-index: 1;
+    animation: intro 2s ease-out;
+  }
 
-      @keyframes intro {
-        0% {
-          opacity: 1;
-        }
-        90% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-        }
-      }
+  @keyframes intro {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
-      h1 {
-        position: absolute;
-        width: 2.6em;
-        left: 50%;
-        top: 25%;
-        font-size: 10em;
-        text-align: center;
-        margin-left: -1.3em;
-        line-height: 0.8em;
-        letter-spacing: -0.05em;
-        color: #000;
-        text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
-        opacity: 0;
-        animation: logo 5s ease-out 2.5s;
-      }
+  h1 {
+    position: absolute;
+    width: 2.6em;
+    left: 50%;
+    top: 25%;
+    font-size: 10em;
+    text-align: center;
+    margin-left: -1.3em;
+    line-height: 0.8em;
+    letter-spacing: -0.05em;
+    color: #000;
+    text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+    opacity: 0;
+    animation: logo 5s ease-out 2.5s;
+  }
 
-      h1 sub {
-        display: block;
-        font-size: 0.3em;
-        letter-spacing: 0;
-        line-height: 0.8em;
-      }
+  h1 sub {
+    display: block;
+    font-size: 0.3em;
+    letter-spacing: 0;
+    line-height: 0.8em;
+  }
 
-      @keyframes logo {
-        0% {
-          transform: scale(1);
-          opacity: 1;
-        }
-        50% {
-          opacity: 1;
-        }
-        100% {
-          transform: scale(0.1);
-          opacity: 0;
-        }
-      }
+  @keyframes logo {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+  }
 
-      #titles {
-        position: absolute;
-        width: 18em;
-        height: 50em;
-        bottom: 0;
-        left: 50%;
-        margin-left: -9em;
-        font-size: 150%;
-        text-align: justify;
-        overflow: hidden;
-        transform: perspective(300px) rotateX(25deg);
-      }
+  #titles {
+    position: absolute;
+    width: 18em;
+    height: 50em;
+    bottom: 0;
+    left: 50%;
+    margin-left: -9em;
+    font-size: 1.5em;
+    text-align: justify;
+    overflow: hidden;
+    transform: perspective(300px) rotateX(25deg);
+  }
 
-      #titles:after {
-        position: absolute;
-        content: " ";
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 60%;
-        background-image: linear-gradient(
-          top,
-          rgba(0, 0, 0, 1) 0%,
-          transparent 100%
-        );
-        pointer-events: none;
-      }
+  #titles:after {
+    position: absolute;
+    content: " ";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 60%;
+    background-image: linear-gradient(
+      top,
+      rgba(0, 0, 0, 1) 0%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }
 
-      #titles p {
-        text-align: justify;
-        margin: 0.8em 0;
-      }
+  #titles p {
+    text-align: justify;
+    margin: 0.8em 0;
+  }
 
-      #titles p.center {
-        text-align: center;
-      }
+  #titles p.center {
+    text-align: center;
+  }
 
-      #titles a {
-        color: #ff6;
-        text-decoration: underline;
-        background-color: purple;
-        color: white;
-      }
+  #titles a {
+    color: #ff6;
+    text-decoration: underline;
+    background-color: purple;
+    color: white;
+  }
 
-      #titlecontent {
-        position: absolute;
-        top: 100%;
-        animation: scroll 100s linear 4s infinite;
-      }
+  #titlecontent {
+    position: absolute;
+    top: 100%;
+    animation: scroll 100s linear 4s infinite;
+  }
 
-      @keyframes scroll {
-        0% {
-          top: 100%;
-        }
-        100% {
-          top: -170%;
-        }
-      }
-    </style>
+  @keyframes scroll {
+    0% {
+      top: 100%;
+    }
+    100% {
+      top: -170%;
+    }
+  }
+
+  /* Responsive text size */
+  @media (max-width: 600px) {
+    body, html {
+      font-size: 0.8em;
+    }
+
+    h1 {
+      font-size: 6em;
+    }
+
+    #titles {
+      font-size: 1.2em;
+    }
+  }
+
+  @media (min-width: 601px) and (max-width: 1200px) {
+    body, html {
+      font-size: 1em;
+    }
+
+    h1 {
+      font-size: 8em;
+    }
+
+    #titles {
+      font-size: 1.4em;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    body, html {
+      font-size: 1.2em;
+    }
+
+    h1 {
+      font-size: 10em;
+    }
+
+    #titles {
+      font-size: 1.6em;
+    }
+  }
+</style>
   </head>
 
   <body class="text-xl md:text-3xl">
